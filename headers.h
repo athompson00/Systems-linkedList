@@ -1,4 +1,5 @@
-struct student creation();
-struct student {char *name; int GPA;};
-void print(struct student s);
-void change(struct student s, char *newname, int GPA);
+struct node { int i; struct node *next; };
+void print_list(struct node *);
+struct node * insert_front(struct node *, int);
+struct node * free_list(struct node *);
+struct node * remove_node(struct node *front, int data);
