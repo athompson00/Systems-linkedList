@@ -23,5 +23,6 @@ int main(){
   }
 
   printf("_________Testing Freeing List_________\n");
-  print_list(free_list(test));
+  free_list(test);
+  print_list(test);
 }
