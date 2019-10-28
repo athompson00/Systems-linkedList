@@ -1,4 +1,4 @@
-all: main.o create.o
+all: main.o node.o
 	gcc -o program main.o node.o
 
 main.o: main.c headers.h
