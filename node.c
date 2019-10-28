@@ -8,7 +8,7 @@
 void print_list(struct node *first){
   printf("[ ");
 
-  while (first != NULL){
+  while (first->next != NULL){
     printf("%d ", first->i);
     first = first->next;
   }
