@@ -13,7 +13,7 @@ void print_list(struct node *first){
   }
   struct node *new = first->next;
 
-  while (new->next != NULL){
+  while (new != NULL){
     printf("%d ", new->i);
     new = new->next;
   }
