@@ -35,6 +35,9 @@ int main(){
   }
 
   printf("_________Testing Freeing List_________\n");
+  printf("List before freedom: ");
+  print_list(test);
+  printf("\n");
   free_list(test);
   print_list(test);
 }
