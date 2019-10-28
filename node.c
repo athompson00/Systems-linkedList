@@ -24,3 +24,5 @@ struct node * insert_front(struct node *first, int i){
   newFirst->i = i;
   return newFirst;
 }
+
+struct
