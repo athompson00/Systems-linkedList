@@ -15,7 +15,7 @@ void print_list(struct node *first){
     new = new->next;
   }
 
-  printf("]\n")
+  printf("]\n");
 }
 
 struct node * insert_front(struct node *first, int i){

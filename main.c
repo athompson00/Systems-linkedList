@@ -10,7 +10,7 @@
 int main(){
   struct node *test = malloc(sizeof(node));
 
-  printf("Printing list test: ")
+  printf("Printing list test: ");
   print_list(test);
 
   printf("_________Testing Insertion__________\n");
