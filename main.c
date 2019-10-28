@@ -30,7 +30,7 @@ int main(){
     test = remove_node(test, x);
     printf("\n");
     print_list(test);
-    printf("\n")
+    printf("\n");
   }
 
   printf("_________Testing Freeing List_________\n");
