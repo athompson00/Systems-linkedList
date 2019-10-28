@@ -39,8 +39,8 @@ struct node * remove_node(struct node *first, int data){
     struct node *new = first->next;
     bool done = 0;
     while (new != NULL && done == 0){
-      if (new-> == data){
-        temp-> = new->next;
+      if (new->next == data){
+        temp->next = new->next;
         done = 1;
       } else {
         temp = new;
