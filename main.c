@@ -25,6 +25,7 @@ int main(){
   printf("_________Testing remove_node_________\n");
   printf("List before removals: ");
   print_list(test);
+  printf("\n");
   for (int x = 0; x < 10; x+=3){
     printf("Removing %i: ", x);
     test = remove_node(test, x);
