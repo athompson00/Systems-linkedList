@@ -30,3 +30,23 @@ struct node * free_list(struct node *first){
   free(first);
   return first->next;
 }
+
+struct node * remove_node(struct node *first, int data){
+  if (first->i == data){
+    return first->next;
+  } else {
+    struct node *temp = first;
+    struct node *new = first->next;
+    bool done = 0;
+    while (new != NULL && done == 0){
+      if (new-> == data){
+        temp-> = new->next;
+        done = 1;
+      } else {
+        temp = new;
+        new = new->next;
+      }
+    }
+    return first;
+  }
+}
