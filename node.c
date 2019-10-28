@@ -33,5 +33,6 @@ struct node * free_list(struct node *first){
     c = c->next;
     free(c);
   }
-  return free(first);
+  free(first)
+  return first->next;
 }
