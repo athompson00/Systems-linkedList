@@ -9,7 +9,7 @@ void print_list(struct node *first){
   if (first->i != NULL){
     printf("[ %d ", first->i);
   } else {
-    printf("[")
+    printf("[");
   }
   struct node *new = first->next;
 
@@ -32,6 +32,6 @@ struct node * free_list(struct node *first){
   if (first->next != NULL){
     first->next = free_list(first->next);
   }
-  free(first)
+  free(first);
   return first->next;
 }
