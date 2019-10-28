@@ -1,7 +1,6 @@
-#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <stdbool.h>
 #include "headers.h"
 
 
@@ -19,7 +18,7 @@ void print_list(struct node *first){
 }
 
 struct node * insert_front(struct node *first, int i){
-  struct node *newFirst = malloc(sizeOf(struct node));
+  struct node *newFirst = malloc(sizeof(struct node));
   newFirst->next = first;
   newFirst->i = i;
   return newFirst;

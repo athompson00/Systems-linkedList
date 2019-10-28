@@ -8,7 +8,7 @@
 
 
 int main(){
-  struct node *test = malloc(sizeof(node));
+  struct node *test = malloc(sizeof(struct node));
 
   printf("Printing list test: ");
   print_list(test);
