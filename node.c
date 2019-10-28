@@ -8,10 +8,12 @@
 void print_list(struct node *first){
   if (first->i != NULL){
     printf("[ %d ", first->i);
+  } else {
+    printf("[")
   }
   struct node *new = first->next;
 
-  while (new != NULL){
+  while (new->next != NULL){
     printf("%d ", new->i);
     new = new->next;
   }
@@ -27,12 +29,9 @@ struct node * insert_front(struct node *first, int i){
 }
 
 struct node * free_list(struct node *first){
-  struct node *c = malloc(sizeof(struct node));
-  c = first->next;
-  while(c->next != NULL){
-    c = c->next;
-    free(c);
+  if (first->next != NULL){
+    first->next = free_list(first->next);
   }
-  free(first);
+  free(first)
   return first->next;
 }
