@@ -16,7 +16,7 @@ int main(){
   printf("_________Testing Insertion__________\n");
   int x;
   for (x = 0; x < 10; x++){
-    test = insert_front(test, i);
+    test = insert_front(test, x);
     printf("Inserted %d to front", x);
     print_list(test);
     printf("\n");
