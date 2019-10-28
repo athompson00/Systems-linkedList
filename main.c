@@ -8,14 +8,18 @@
 
 
 int main(){
-  struct student s0 = creation();
+  struct node *test = malloc(sizeof(node));
 
-  printf("After first created: \n");
-  print(s0);
-  printf("After Change\n");
-  change(s0, "John", 82);
-  print(s0);
+  printf("Printing list test: ")
+  print_list(test);
 
-  //printf("%d",s0.GPA);
+  printf("_________Testing Insertion__________\n");
+  int x;
+  for (x = 0; x < 10; x++){
+    test = insert_front(test, i);
+    printf("Inserted %d to front", x);
+    print_list(test);
+    printf("\n");
+  }
 
 }
