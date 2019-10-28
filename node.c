@@ -6,16 +6,11 @@
 
 
 void print_list(struct node *first){
-  if (first->i != NULL){
-    printf("[ %d ", first->i);
-  } else {
-    printf("[");
-  }
-  struct node *new = first->next;
+  printf("[ ");
 
-  while (new != NULL){
-    printf("%d ", new->i);
-    new = new->next;
+  while (first != NULL){
+    printf("%d ", first->i);
+    first = first->next;
   }
 
   printf("]\n");
